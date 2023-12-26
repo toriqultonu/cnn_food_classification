@@ -4,6 +4,7 @@ import torch
 import os
 from torchvision import transforms
 
+
 EPOCHS = 5
 BATCH = 32
 HIDDEN_UNIT = 10
@@ -33,11 +34,11 @@ my_train_dataloader, my_test_dataloader, my_class_names = data_setup.create_data
 my_model = model_builder.TinyVGG(
   input_shape = 3,
   hidden_units = HIDDEN_UNIT,
-  output_shape = len(class_names)
+  output_shape = len(my_class_names)
 ).to(device)
 
 my_loss_fn = torch.nn.CrossEntropyLoss()
-my_optimizer = torch.optim.Adam(model.parameters(), lr=LEARNING_RATE)
+my_optimizer = torch.optim.Adam(my_model.parameters(), lr=LEARNING_RATE)
 
 train_test.train(
   model = my_model,

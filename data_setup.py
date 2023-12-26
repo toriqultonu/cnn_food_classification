@@ -32,3 +32,5 @@ def create_dataloaders(
         num_workers=num_workers,
         pin_memory=True,
     )
+
+  return train_dataloader, test_dataloader, class_names

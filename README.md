@@ -8,9 +8,9 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://raw.githubusercontent.com/toriqultonu/cnn_food_classification/main/__pycache__/steak.PNG" alt="project-screenshot" width="100" height="300/">
+<img src="https://raw.githubusercontent.com/toriqultonu/cnn_food_classification/main/__pycache__/steak.PNG" alt="project-screenshot" width="400" height="400/">
 
-<img src="https://raw.githubusercontent.com/toriqultonu/cnn_food_classification/main/__pycache__/curve.png" alt="project-screenshot" width="300" height="100/">
+<img src="https://raw.githubusercontent.com/toriqultonu/cnn_food_classification/main/__pycache__/curve.png" alt="project-screenshot" width="600" height="200/">
 
   
   
@@ -48,6 +48,7 @@ python train.py
 ```
 python main.py --image_path path/to/your/image.jpg
 ```
+
 
   
   
